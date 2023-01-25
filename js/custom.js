@@ -368,3 +368,32 @@ $(function () {
 
 
 });
+
+
+// Get the carousel elements
+var carousel = document.getElementById("customCarousel");
+var carouselInner = carousel.querySelector(".custom-carousel-inner");
+var carouselItems = carouselInner.querySelectorAll(".custom-carousel-item");
+
+// Set the current item index
+var currentItem = 0;
+
+// Function to go to the next item
+function goToNextItem() {
+  // Remove the active class from the current item
+  carouselItems[currentItem].classList.remove("active");
+  
+  // Increment the current item index
+  currentItem++;
+  
+  // If we've reached the end of the carousel, go back to the first item
+  if (currentItem >= carouselItems.length) {
+    currentItem = 0;
+  }
+  
+  // Add the active class to the next item
+  carouselItems[currentItem].classList.add("active");
+}
+
+// Set a timeout to go to the next item every 5 seconds
+setInterval(goToNextItem, 2500);

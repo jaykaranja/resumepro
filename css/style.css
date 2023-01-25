@@ -229,6 +229,7 @@ button {
     height: auto;
     background-size: 100%;
 }
+
 .bg-light {
     background-color: transparent !important;
 }
@@ -303,6 +304,67 @@ button {
     width: 20%;
     float: left;
 }
+/* Container */
+.custom-carousel {
+    width: 100%;
+    height:700px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Inner container */
+  .custom-carousel-inner {
+    width: 100%;
+    position: relative;
+  }
+  
+  /* Items */
+  .custom-carousel-item {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  /* Active item */
+  .custom-carousel-item.active {
+    opacity: 1;
+  }
+  
+  /* Navigation buttons */
+  .custom-carousel-prev,
+  .custom-carousel-next {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.5rem 1rem;
+    border-radius: 50%;
+    text-decoration: none;
+  }
+  
+  /* Previous button */
+  .custom-carousel-prev {
+    left: 1rem;
+  }
+  
+  /* Previous button icon */
+  .custom-carousel-prev-icon {
+    margin-right: 0.5rem;
+  }
+  
+  /* Next button */
+  .custom-carousel-next {
+    right: 1rem;
+  }
+  
+  /* Next button icon */
+  .custom-carousel-next
+  
 
 .banner_section{
     width: 100%;
@@ -375,11 +437,7 @@ button {
     background-color: #ffffff;
     color: #000;
 }
-#main_slider a.carousel-control-prev {
-    position: absolute;
-    left: -90px;
-    top: 50%;
-}
+
 
 .carousel-control-prev {
     left: 0;
@@ -387,11 +445,7 @@ button {
 #main_slider .carousel-control-prev:hover, #main_slider .carousel-control-next:hover, #main_slider .carousel-control-prev:focus, #main_slider .carousel-control-next:focus {
     color: #fff;
 }
-#main_slider a.carousel-control-next {
-    position: absolute;
-    left: -90px;
-    top: 75%;
-}
+
 #main_slider .carousel-control-prev, #main_slider .carousel-control-next {
     width: 65px;
     height: 65px;
@@ -485,6 +539,7 @@ button {
     text-align: center;
     margin-left: 0px;
 }
+
 .about_section{
     width: 100%;
     float: left; 
@@ -570,10 +625,12 @@ button {
     padding: 10px 0px;
     border-radius: 30px;
 }
+
 .read_bt1 a:hover{
     color: #ffffff;
     background-color: #d72a18;
 }
+
 .product_section {
     width: 100%;
     float: left;
@@ -756,6 +813,7 @@ button {
     top: -56px;
     right: 5px;
 }
+
 .client_section {
     width: 100%;
     float: left;
@@ -770,6 +828,11 @@ button {
     font-weight: bold;
 }
 
+.client_section2{
+    width: 100%;
+    float: left;
+}
+
 .sample-title {
     width: 100%;
     float: left;
@@ -779,15 +842,8 @@ button {
     font-weight: bold;
     margin-top: 3rem;
 }
-.client_section2{
-    width: 100%;
-    float: left;
-}
-.client_image{
-    width: 100%;
-    float: left;
-    text-align: center;
-}
+
+
 .miller_text{
     width: 100%;
     float: left;
@@ -875,9 +931,10 @@ button {
 }
 
 .sample-documents  {
-    height: 700px;
-    margin-left: 25vw;
+    height: 500px;
+    margin-left: 0px;
     margin-top: 50px;
+    padding: 1.5rem;
 
 }
 
@@ -885,15 +942,24 @@ button {
     .sample-documents  {
         height: 700px;
         margin-top: 50px;
-        margin-left: 0px;
+        margin-left: 28vw;
     
     }
 }
 
 
-.sample-bg {
-    background-image: url('images/product-bg.png');
+.footer-icon {
+    color: black;
+    border-radius: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+    padding-top: 0.5rem;
+    margin-right: 0.5rem;
+    background-color: white;
 }
+
+
 
 .footer_lorem_text1{
     width: 100%;
